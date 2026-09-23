@@ -1,121 +1,58 @@
-# codespectra-intern-netflix-clone
+# Netflix Clone
 
-A Netflix-inspired streaming landing page built as a modern static front-end project using HTML, CSS, and JavaScript. The project recreates the feel of a premium OTT homepage with a full-width hero banner, movie carousels, responsive layout, and navigation.
-
-## Overview
-
-This repository contains a single-page Netflix-style website that showcases:
-
-- Hero banner carousel with autoplay and navigation buttons
-- Movie/series category sections
-- Responsive grid-based layout
-- Mobile sidebar navigation menu
-- Footer with branding and browse links
-- Interactive carousel behaviors using jQuery + OwlCarousel
-
-## Tech Stack
-
-- HTML5
-- CSS3
-- JavaScript (jQuery)
-- OwlCarousel 2
-- Boxicons
-- Google Fonts
-
-## Project Structure
-
-```text
-.
-├── app.css              # Main stylesheet for layout and design
-├── app.js               # JavaScript for carousel initialization and menu behavior
-├── grid.css             # Responsive CSS grid system
-├── index.html           # Main landing page markup
-├── README.md            # Project documentation
-├── *.jpg                # Movie and banner images
-├── *.png                # Banner and UI asset files
-├── *.webp               # WebP media assets
-├── *.jpeg               # Additional image assets
-├── signup.html          # Empty placeholder signup page
-├── style.css            # Additional stylesheet (present in repo)
-├── Untitled-1.js        # Extra JS file in repo
-├── app1.css             # Empty stylesheet placeholder
-└── ...
-```
+A Netflix-inspired static streaming landing page built with HTML, CSS, and JavaScript. It recreates an OTT-style browsing experience with a cinematic hero carousel, movie collections, responsive cards, mobile navigation, and a footer with browse/account links.
 
 ## Features
 
-### Home page UI
-- Dark Netflix-inspired theme
-- Fixed top navigation bar
-- Large cinematic hero slider
-- Category sections like Top Movies, Trending Now, and Popular Series
-- Responsive movie cards with hover effects
+- Autoplay hero carousel for featured titles
+- Top Movies, Trending Now, and Popular Series sections
+- Responsive movie-card grid and carousel layouts
+- Mobile hamburger navigation
+- Hover animations and responsive breakpoints
+- Static signup page placeholder
 
-### Responsive design
-- Uses custom CSS grid classes for desktop, tablet, and mobile layouts
-- Mobile hamburger menu for small screens
-- Adaptive layout using media queries
+## Tech stack
 
-### Interactive elements
-- Carousel navigation on hero and category sections
-- Auto-scrolling slides with pause on hover
-- Sidebar menu toggle for mobile screens
+- HTML5
+- CSS3, including the custom responsive grid in `grid.css`
+- JavaScript with jQuery
+- OwlCarousel 2 for sliders
+- Boxicons and Google Fonts loaded from CDNs
 
-## Local Development
+## Project structure
 
-Since this is a static site, you can run it directly in a browser without a build step.
+```text
+.
+├── index.html       # Main landing page
+├── signup.html      # Signup placeholder
+├── app.js           # Menu and OwlCarousel initialization
+├── app.css          # Main theme and component styles
+├── grid.css         # Responsive grid utilities
+├── style.css        # Additional stylesheet
+├── Untitled-1.js    # Additional JavaScript file
+└── *.{jpg,png,webp,jpeg} # Movie and banner artwork
+```
 
-### Option 1: Open directly
-1. Clone the repository.
-2. Open `index.html` in your browser.
+## Run locally
 
-### Option 2: Run a local web server
+This project has no build step or backend. Open `index.html` directly, or serve it locally:
+
 ```bash
+git clone https://github.com/MohamedUkkas/codespectra-intern-netflix-clone.git
 cd codespectra-intern-netflix-clone
 python3 -m http.server 8000
 ```
 
-Then visit:
-
-```text
-http://localhost:8000
-```
+Open <http://localhost:8000> in a browser.
 
 ## Deployment
 
-This project is suitable for GitHub Pages because it is a static front-end site.
+Because this is a static site, it can be deployed from the repository root using GitHub Pages or any static hosting provider.
 
-### GitHub Pages setup
-1. Go to repository settings.
-2. Open the Pages section.
-3. Select the branch to deploy from.
-4. Choose the root directory (`/`).
-5. Save the settings.
+## Disclaimer
 
-Your site will be published at a URL like:
-
-```text
-https://<your-username>.github.io/codespectra-intern-netflix-clone/
-```
-
-## Notes
-
-- The project is intentionally front-end focused and does not include a backend or database.
-- Some files in the repository appear as asset placeholders or duplicate/unused files, but the main project is driven by `index.html`, `app.css`, `app.js`, and `grid.css`.
-- This is a static clone/demo UI inspired by Netflix branding and presentation.
-
-## License
-
-This project does not currently include a repository license file. If you plan to share or reuse it publicly, consider adding an open-source license such as MIT.
+This is an educational front-end project inspired by Netflix's interface. It is not affiliated with or endorsed by Netflix. The repository does not currently include a license file.
 
 ## Author
 
-MohamedUkkas
-
-## Repository
-
-https://github.com/MohamedUkkas/codespectra-intern-netflix-clone
-
----
-
-This README reflects the actual repository structure and contents as present in the project files.
+Mohamed Ukkas
