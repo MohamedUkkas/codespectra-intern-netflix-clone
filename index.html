@@ -1,148 +1,234 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Code</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <meta name="description" content="Netflix-inspired streaming landing page built with HTML, CSS, and JavaScript." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="grid.css" />
+    <link rel="stylesheet" href="app.css" />
 </head>
 
 <body>
-  <header class="header">
-    <nav class="navbar">
-      <div class="navbar-container container">
-        <div>
-          <h1 class="navbar-brand">Mohamed Ukkas</h1>
-        </div>
-        <ul class="menu-items">
-          <li><a href="#about">About</a></li>
-          <li><a href="#my-works">Portfolio</a></li>
-          <li><a href="#contact-me">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <div class="home-content" id="home-page">
-      <div class="name">
-        <h1>Hi, I'm Mohamed Ukkas</h1>
-        <p>A web Developer in training.</p>
-      </div>
-      <div class="angle-down-icon">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>
-      </div>
-    </div>
-  </header>
-  <section class="about-me" id="about">
-    <div class="container">
-      <div class="about-content">
-        <div class="left-content">
-          <div>
-            <h1 class="about-heading">About Me</h1>
-          </div>
-          <img src="https://i.postimg.cc/Hx4nChpH/fbavatar-1630400663387-6838396024049256103.png" alt="image" />
-          <p>
-            I am 18 year old, B.Tech Artificial Intelligence and Data Science student studied at Mohamed Sathak A J College of Engineering.
-            I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new
-            things; the more, the better.
-          </p>
-          <div class="work-arrow">
-            <p>
-              <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-            </p>
-          </div>
-        </div>
-        <div class="skills">
-          <div class="right-content">
-            <div>
-              <h1 class="skills-heading">My Skills</h1>
-            </div>
-            <div class="skills-bar">
-              <div class="bar">
-                <div class="info">
-                  <span>HTML</span>
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix logo" />
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">TV Shows</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Latest</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+                <a href="#" class="btn btn-hover"><i class='bx bx-user'></i><span>Profile</span></a>
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
                 </div>
-                <div class="progress-line"><span class="html"></span></div>
-                <div class="bar">
-                  <div class="info">
-                    <span>CSS</span>
-                  </div>
-                  <div class="progress-line"><span class="css"></span></div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>BOOTSTRAP</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="hero-carousel" class="owl-carousel">
+        <div class="hero-slide-item">
+            <img src="black-banner.png" alt="Black banner" />
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="top-down delay-1">
+                        <span class="main-color">Netflix Originals</span>
                     </div>
-                    <div class="progress-line"><span class="bootstrap"></span></div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>JAVASCRIPT</span>
-                      </div>
-                      <div class="progress-line"><span class="javascript"></span></div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>C Programming</span>
+                    <h2 class="item-content-title top-down delay-2">Black Mirror</h2>
+                    <div class="movie-infos top-down delay-3">
+                        <div class="movie-info">
+                            <i class='bx bxs-star'></i>
+                            <span>9.2</span>
                         </div>
-                        <div class="progress-line"><span class="c"></span></div>
-                      </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-calendar'></i>
+                            <span>2019</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-time-five'></i>
+                            <span>Unlimited</span>
+                        </div>
                     </div>
-                  </div>
+                    <p class="item-content-description top-down delay-4">
+                        A dark reflection on the modern world, where technology and human behavior collide in unexpected ways.
+                    </p>
+                    <div class="item-action top-down delay-5">
+                        <a href="#" class="btn btn-hover"><i class='bx bx-play'></i><span>Watch now</span></a>
+                    </div>
                 </div>
-              </div>
             </div>
-            <div class="work-arrow-2">
-              <p>
-                <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
-              </p>
+        </div>
+
+        <div class="hero-slide-item">
+            <img src="supergirl-banner.jpg" alt="Supergirl banner" />
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="top-down delay-1">
+                        <span class="main-color">Trending</span>
+                    </div>
+                    <h2 class="item-content-title top-down delay-2">Supergirl</h2>
+                    <div class="movie-infos top-down delay-3">
+                        <div class="movie-info">
+                            <i class='bx bxs-star'></i>
+                            <span>8.7</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-calendar'></i>
+                            <span>2024</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-time-five'></i>
+                            <span>1h 55m</span>
+                        </div>
+                    </div>
+                    <p class="item-content-description top-down delay-4">
+                        A fearless hero rises to protect the innocent while facing some of the most intense challenges of her life.
+                    </p>
+                    <div class="item-action top-down delay-5">
+                        <a href="#" class="btn btn-hover"><i class='bx bx-play'></i><span>Watch now</span></a>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="my-works">
-    <div class="portfolio">
-      <div class="proj-heading">
-        <h1>Portfolio</h1>
-      </div>
-      <div class="portfolio-content container">
-        <div class="proj-1">
-          <img src="Our work.png">
-          <div class="proj1-details">
-            <i class="fab fa-html5"></i>
-            <i class="fab fa-css3-alt"></i>
-            <i class="fab fa-js"></i>
-            <h2>Digital Marketing Website </h2>
-            <p>Build Using HTML,CSS,JS</p>
-
-          </div>
         </div>
 
-        
-
+        <div class="hero-slide-item">
+            <img src="transformer-banner.jpg" alt="Transformers banner" />
+            <div class="hero-slide-item-content">
+                <div class="item-content-wraper">
+                    <div class="top-down delay-1">
+                        <span class="main-color">Action</span>
+                    </div>
+                    <h2 class="item-content-title top-down delay-2">Transformers</h2>
+                    <div class="movie-infos top-down delay-3">
+                        <div class="movie-info">
+                            <i class='bx bxs-star'></i>
+                            <span>8.9</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-calendar'></i>
+                            <span>2023</span>
+                        </div>
+                        <div class="movie-info">
+                            <i class='bx bxs-time-five'></i>
+                            <span>2h 15m</span>
+                        </div>
+                    </div>
+                    <p class="item-content-description top-down delay-4">
+                        The last battle for Earth begins as ancient powers awaken and a new generation of heroes steps forward.
+                    </p>
+                    <div class="item-action top-down delay-5">
+                        <a href="#" class="btn btn-hover"><i class='bx bx-play'></i><span>Watch now</span></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-      </div>
     </div>
-  </section>
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i> mohamedukkas2005@gmail.com
-        </p>
-        <p class="links">Or find me on:</p>
-        <a href="https://www.linkedin.com/in/mohamed-ukkas-3004862a0/" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="http://github.com/MohamedUkkas" target="blank"><i class="fab fa-github"></i> Github</a>
-      </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">Top Movies</div>
+            <div id="top-movies-slide" class="owl-carousel carousel-nav-center">
+                <a class="movie-item" href="#"><img src="mandalorian.jpg" alt="The Mandalorian" /><div class="movie-item-content"><div class="movie-item-title">The Mandalorian</div></div></a>
+                <a class="movie-item" href="#"><img src="bat-man.jpg" alt="Batman" /><div class="movie-item-content"><div class="movie-item-title">Batman</div></div></a>
+                <a class="movie-item" href="#"><img src="end-game.jpg" alt="End Game" /><div class="movie-item-content"><div class="movie-item-title">End Game</div></div></a>
+                <a class="movie-item" href="#"><img src="weathering.jpg" alt="Weathering" /><div class="movie-item-content"><div class="movie-item-title">Weathering</div></div></a>
+                <a class="movie-item" href="#"><img src="stranger-thing.jpg" alt="Stranger Things" /><div class="movie-item-content"><div class="movie-item-title">Stranger Things</div></div></a>
+                <a class="movie-item" href="#"><img src="resident-evil.jpg" alt="Resident Evil" /><div class="movie-item-content"><div class="movie-item-title">Resident Evil</div></div></a>
+            </div>
+        </div>
     </div>
-  </div>
-  <!-- JAVASCRIPT -->
-  <script src="app.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">Trending Now</div>
+            <div class="movies-slide owl-carousel carousel-nav-center">
+                <a class="movie-item" href="#"><img src="the-falcon.webp" alt="The Falcon" /><div class="movie-item-content"><div class="movie-item-title">The Falcon</div></div></a>
+                <a class="movie-item" href="#"><img src="wanda.webp" alt="Wanda" /><div class="movie-item-content"><div class="movie-item-title">Wanda</div></div></a>
+                <a class="movie-item" href="#"><img src="over-the-moon.jpg" alt="Over the Moon" /><div class="movie-item-content"><div class="movie-item-title">Over the Moon</div></div></a>
+                <a class="movie-item" href="#"><img src="demon-slayer.jpg" alt="Demon Slayer" /><div class="movie-item-content"><div class="movie-item-title">Demon Slayer</div></div></a>
+                <a class="movie-item" href="#"><img src="your-name.jpg" alt="Your Name" /><div class="movie-item-content"><div class="movie-item-title">Your Name</div></div></a>
+                <a class="movie-item" href="#"><img src="dragon.jpg" alt="Dragon" /><div class="movie-item-content"><div class="movie-item-title">Dragon</div></div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container">
+            <div class="section-header">Popular Series</div>
+            <div class="movies-slide owl-carousel carousel-nav-center">
+                <a class="movie-item" href="#"><img src="penthouses.jpg" alt="Penthouses" /><div class="movie-item-content"><div class="movie-item-title">Penthouses</div></div></a>
+                <a class="movie-item" href="#"><img src="star-trek.jpg" alt="Star Trek" /><div class="movie-item-content"><div class="movie-item-title">Star Trek</div></div></a>
+                <a class="movie-item" href="#"><img src="theatre-dead.jpg" alt="Theatre Dead" /><div class="movie-item-content"><div class="movie-item-title">Theatre Dead</div></div></a>
+                <a class="movie-item" href="#"><img src="croods.jpg" alt="Croods" /><div class="movie-item-content"><div class="movie-item-title">Croods</div></div></a>
+                <a class="movie-item" href="#"><img src="supergirl.jpg" alt="Supergirl" /><div class="movie-item-content"><div class="movie-item-title">Supergirl</div></div></a>
+                <a class="movie-item" href="#"><img src="love-roise.jpg" alt="Love Rose" /><div class="movie-item-content"><div class="movie-item-title">Love Rose</div></div></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-md-6 col-sm-12">
+                    <a href="#" class="logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix logo" />
+                    </a>
+                    <p class="content">A premium streaming experience designed for entertainment lovers.</p>
+                    <div class="social-list">
+                        <a href="#" class="social-item"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" class="social-item"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" class="social-item"><i class='bx bxl-twitter'></i></a>
+                    </div>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="footer-menu-header">Browse</div>
+                    <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">New and Popular</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="footer-menu-header">Account</div>
+                    <ul class="footer-menu">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Subtitles</a></li>
+                        <li><a href="#">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="footer-menu-header">Legal</div>
+                    <ul class="footer-menu">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Cookie Preferences</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">Copyright 2025 © Netflix Clone</div>
+
+    <script src="https://code.jquery.com/jquery-3.12.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
