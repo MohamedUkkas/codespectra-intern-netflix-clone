@@ -1,22 +1,25 @@
-# Netflix Clone
+# Netflix-Inspired Streaming Interface
 
-A Netflix-inspired static streaming landing page built with HTML, CSS, and JavaScript. It recreates an OTT-style browsing experience with a cinematic hero carousel, movie collections, responsive cards, mobile navigation, and a footer with browse/account links.
+A static, Netflix-inspired streaming interface built as an early frontend development project.
 
-## Features
+> This is an educational frontend project. It is not affiliated with or endorsed by Netflix and does not provide real streaming, accounts, recommendations, or backend services.
+
+## What it demonstrates
 
 - Autoplay hero carousel for featured titles
-- Top Movies, Trending Now, and Popular Series sections
-- Responsive movie-card grid and carousel layouts
-- Mobile hamburger navigation
-- Hover animations and responsive breakpoints
-- Static signup page placeholder
+- Movie and series content sections
+- Responsive movie-card layouts
+- Mobile navigation interaction
+- Hover states and responsive breakpoints
+- Static signup-page presentation
 
-## Tech stack
+## Technology
 
 - HTML5
-- CSS3, including the custom responsive grid in `grid.css`
-- JavaScript with jQuery
-- OwlCarousel 2 for sliders
+- CSS3
+- JavaScript
+- jQuery
+- OwlCarousel 2
 - Boxicons and Google Fonts loaded from CDNs
 
 ## Project structure
@@ -24,18 +27,16 @@ A Netflix-inspired static streaming landing page built with HTML, CSS, and JavaS
 ```text
 .
 ├── index.html       # Main landing page
-├── signup.html      # Signup placeholder
-├── app.js           # Menu and OwlCarousel initialization
+├── signup.html      # Static signup-page presentation
+├── app.js           # Navigation and carousel behavior
 ├── app.css          # Main theme and component styles
 ├── grid.css         # Responsive grid utilities
-├── style.css        # Additional stylesheet
-├── Untitled-1.js    # Additional JavaScript file
-└── *.{jpg,png,webp,jpeg} # Movie and banner artwork
+├── style.css        # Additional styles
+├── Untitled-1.js    # Additional JavaScript from the original project
+└── image assets     # Movie and banner artwork
 ```
 
 ## Run locally
-
-This project has no build step or backend. Open `index.html` directly, or serve it locally:
 
 ```bash
 git clone https://github.com/MohamedUkkas/codespectra-intern-netflix-clone.git
@@ -45,13 +46,21 @@ python3 -m http.server 8000
 
 Open <http://localhost:8000> in a browser.
 
-## Deployment
+## Testing
 
-Because this is a static site, it can be deployed from the repository root using GitHub Pages or any static hosting provider.
+This project has no automated test suite or backend. Test the interface manually across desktop and mobile viewport sizes, including navigation, carousel controls, image loading, and the static signup page.
 
-## Disclaimer
+## Asset and licensing note
 
-This is an educational front-end project inspired by Netflix's interface. It is not affiliated with or endorsed by Netflix. The repository does not currently include a license file.
+Review the rights and provenance of all bundled artwork before redistributing or deploying this project. A license should be added only after the project code and assets have been reviewed for redistribution rights.
+
+## Limitations
+
+- No backend or database
+- No real authentication
+- No streaming service integration
+- No content-management system
+- No automated browser tests
 
 ## Author
 
